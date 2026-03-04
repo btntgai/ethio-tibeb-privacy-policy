@@ -1,24 +1,216 @@
-Ethio-Tibeb allows users to request deletion of their account and associated data.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ethio-Tibeb – Delete Account</title>
+  <meta name="description" content="How to request deletion of your Ethio-Tibeb account and associated data." />
+  <style>
+    :root{
+      --bg:#0b1220;
+      --card:#0f172a;
+      --text:#e5e7eb;
+      --muted:#9ca3af;
+      --border:rgba(255,255,255,.10);
+      --accent:#38bdf8;
+      --danger:#f87171;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background: radial-gradient(1200px 600px at 15% 10%, rgba(56,189,248,.18), transparent 55%),
+                  radial-gradient(900px 450px at 85% 20%, rgba(34,211,238,.12), transparent 60%),
+                  var(--bg);
+      color:var(--text);
+      line-height:1.6;
+    }
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:900px; margin:0 auto; padding:32px 16px 56px}
+    .header{
+      display:flex; flex-wrap:wrap; gap:12px; align-items:flex-start; justify-content:space-between;
+      margin-bottom:18px;
+    }
+    .brand{
+      display:flex; gap:12px; align-items:center;
+    }
+    .logo{
+      width:44px; height:44px; border-radius:12px;
+      background: linear-gradient(135deg, rgba(56,189,248,.35), rgba(34,211,238,.15));
+      border:1px solid var(--border);
+      box-shadow: var(--shadow);
+      display:grid; place-items:center;
+      font-weight:800; letter-spacing:.5px;
+      color:var(--accent);
+      user-select:none;
+    }
+    .title h1{margin:0; font-size:22px; letter-spacing:.2px}
+    .title p{margin:4px 0 0; color:var(--muted); font-size:14px}
+    .badge{
+      border:1px solid var(--border);
+      background: rgba(255,255,255,.04);
+      color: var(--muted);
+      padding:8px 12px;
+      border-radius:999px;
+      font-size:12px;
+      height:fit-content;
+      box-shadow: 0 6px 18px rgba(0,0,0,.22);
+    }
+    .card{
+      background: rgba(15,23,42,.88);
+      border:1px solid var(--border);
+      border-radius:18px;
+      box-shadow: var(--shadow);
+      padding:18px;
+      backdrop-filter: blur(8px);
+    }
+    .grid{
+      display:grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap:16px;
+      margin-top:14px;
+    }
+    @media (max-width: 820px){
+      .grid{grid-template-columns:1fr}
+    }
+    h2{
+      margin:0 0 10px;
+      font-size:16px;
+      letter-spacing:.2px;
+      color:#f3f4f6;
+      display:flex; gap:10px; align-items:center;
+    }
+    .dot{
+      width:10px; height:10px; border-radius:50%;
+      background: var(--accent);
+      box-shadow: 0 0 0 4px rgba(56,189,248,.15);
+      flex:none;
+    }
+    .lead{margin:0; color:var(--text)}
+    ol{
+      margin:10px 0 0 18px;
+      padding:0;
+    }
+    li{margin:6px 0}
+    .callout{
+      margin-top:12px;
+      padding:12px 12px;
+      border-radius:14px;
+      border:1px solid rgba(56,189,248,.22);
+      background: linear-gradient(135deg, rgba(56,189,248,.10), rgba(34,211,238,.06));
+    }
+    .callout p{margin:0; color:var(--text)}
+    .email{
+      display:inline-flex; gap:8px; align-items:center;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid var(--border);
+      background: rgba(255,255,255,.04);
+      margin-top:10px;
+      font-weight:600;
+    }
+    .pill{
+      display:inline-block;
+      padding:4px 10px;
+      border-radius:999px;
+      font-size:12px;
+      border:1px solid var(--border);
+      background: rgba(255,255,255,.04);
+      color: var(--muted);
+      margin-top:10px;
+    }
+    ul{
+      margin:10px 0 0 18px;
+      padding:0;
+    }
+    .danger{
+      border:1px solid rgba(248,113,113,.25);
+      background: linear-gradient(135deg, rgba(248,113,113,.10), rgba(248,113,113,.04));
+    }
+    .footer{
+      margin-top:18px;
+      color:var(--muted);
+      font-size:12px;
+    }
+    .divider{
+      height:1px; background: var(--border);
+      margin:14px 0;
+    }
+  </style>
+</head>
 
-How to request account deletion:
+<body>
+  <div class="wrap">
+    <div class="header">
+      <div class="brand">
+        <div class="logo">ET</div>
+        <div class="title">
+          <h1>Delete Account Request</h1>
+          <p>Ethio-Tibeb — Account & Data Deletion</p>
+        </div>
+      </div>
+      <div class="badge">Help Center</div>
+    </div>
 
-1. Open the Ethio-Tibeb mobile app.
-2. Go to Profile → Settings.
-3. Select "Delete Account".
-4. Confirm your request.
+    <div class="card">
+      <p class="lead">
+        Ethio-Tibeb allows users to request deletion of their account and associated data.
+      </p>
 
-Alternatively, you can request deletion by emailing:
-support@ethiotibeb.com
+      <div class="grid">
+        <div class="card" style="padding:16px;">
+          <h2><span class="dot"></span>How to request account deletion</h2>
+          <ol>
+            <li>Open the Ethio-Tibeb mobile app.</li>
+            <li>Go to <strong>Profile → Settings</strong>.</li>
+            <li>Select <strong>“Delete Account”</strong>.</li>
+            <li>Confirm your request.</li>
+          </ol>
 
-Include the email address used to create your account.
+          <div class="callout">
+            <p>
+              Alternatively, you can request deletion by emailing:
+              <span class="email">
+                <a href="mailto:support@ethiotibeb.com">support@ethiotibeb.com</a>
+              </span>
+            </p>
+            <p class="pill">Include the email address used to create your account.</p>
+          </div>
+        </div>
 
-Data that will be deleted:
-• User profile information
-• Comments and activity
-• Favorites and watch history
+        <div class="card danger" style="padding:16px;">
+          <h2><span class="dot" style="background:var(--danger); box-shadow: 0 0 0 4px rgba(248,113,113,.12);"></span>What gets deleted</h2>
+          <ul>
+            <li>User profile information</li>
+            <li>Comments and activity</li>
+            <li>Favorites and watch history</li>
+          </ul>
 
-Data that may be retained temporarily:
-• Security logs for up to 30 days
-• Data required for legal compliance
+          <div class="divider"></div>
 
-After processing your request, your account and associated personal data will be permanently deleted.
+          <h2 style="margin-top:0;"><span class="dot"></span>What may be retained temporarily</h2>
+          <ul>
+            <li>Security logs for up to 30 days</li>
+            <li>Data required for legal compliance</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="footer">
+        After processing your request, your account and associated personal data will be permanently deleted.
+      </p>
+    </div>
+
+    <p class="footer" style="margin-top:14px;">
+      © <span id="y"></span> Ethio-Tibeb. For questions, contact
+      <a href="mailto:support@ethiotibeb.com">support@ethiotibeb.com</a>.
+    </p>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
